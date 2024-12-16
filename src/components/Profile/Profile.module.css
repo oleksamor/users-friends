@@ -1,7 +1,10 @@
 .container {
     width: 500px;
-    margin: 50px;
-    padding: 50px;
+    height: 500px;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 14px;
 }
 
 .avatar {
@@ -9,14 +12,62 @@
 }
 
 .followers {
+    display: flex;
+    width: auto;
+    max-height: fit-content;
     list-style: none;
+    justify-content: space-between;
+    padding-inline-start: 0px;
+    border-collapse: collapse;
+    border-top: 2px solid gray;
+    background-color: rgb(205, 201, 201);
 }
 
 .img {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 0 auto;
 }
 
 .username {
+    font-size: 32px;
+    font-weight: 800;
+    margin-top: 4px;
+    margin-bottom: 0px;
+}
+
+.usertag {
     font-size: 28px;
+    font-weight: 500;
+    color: #888;
+    margin-top: 4px;
+    margin-bottom: 0px;
+}
+
+.userlocation {
+    font-size: 28px;
+    font-weight: 500;
+    color: #888;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-right: 2px solid gray;
+    align-items: center;
+    flex: 1;
+}
+
+.txt {
+    font-size: 22px;
+}
+
+.nmbr {
+    font-size: 22px;
+    font-weight: 700;
 }
