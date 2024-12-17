@@ -1,0 +1,9 @@
+.friendItems {
+    display: flex;
+    flex-direction: row;
+}
+
+.friend {
+    display: flex;
+    flex-direction: column;
+}
