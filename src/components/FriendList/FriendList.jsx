@@ -2,13 +2,19 @@ import React from "react";
 import s from "./FriendList.module.css";
 import FriendListItem from "../FriendListItem/FriendListItem";
 
-const FriendList = () => {
+const FriendList = ({ props }) => {
   return (
     <div>
       <ul className={s.friendItems}>
-        <li className={s.friend}>
-          <FriendListItem />
-        </li>
+        {props.map((item) => (
+          <li key={item.id} className={s.friend}>
+            <FriendListItem
+              avatar={item.avatar}
+              name={item.name}
+              isOnline={item.isOnline}
+            />
+          </li>
+        ))}
       </ul>
     </div>
   );

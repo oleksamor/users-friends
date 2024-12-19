@@ -1,6 +1,7 @@
 import FriendList from "./components/FriendList/FriendList.jsx";
 import Profile from "./components/Profile/Profile.jsx";
 import userData from "./userData.json";
+import friends from "./friends.json";
 import { React } from "react-dom";
 
 const App = () => {
@@ -13,7 +14,8 @@ const App = () => {
         image={userData.avatar}
         stats={userData.stats}
       />
-      <FriendList />
+      <FriendList props={friends} />
+      <TransactionHistory />
     </div>
   );
 };

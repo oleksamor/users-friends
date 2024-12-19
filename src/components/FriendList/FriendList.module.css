@@ -1,9 +1,18 @@
 .friendItems {
     display: flex;
     flex-direction: row;
+    padding: 0px;
+    column-gap: 3px;
+    justify-content: space-evenly;
 }
 
 .friend {
     display: flex;
     flex-direction: column;
+    width: auto;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 4px;
+    margin: 0;
 }

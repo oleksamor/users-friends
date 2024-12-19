@@ -1,0 +1,24 @@
+.green {
+    color: green;
+    margin: 0;
+}
+
+.red {
+    color: red;
+    margin: 0;
+}
+
+.friendItem {
+    justify-items: center;
+}
+
+.avatar {
+    width: 80px;
+    height: auto;
+
+}
+
+.nameItem {
+    font-size: x-large;
+    margin: 0;
+}
