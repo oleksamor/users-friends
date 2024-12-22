@@ -18,7 +18,6 @@ const App = () => {
       />
       <FriendList props={friends} />
       <TransactionHistory transactions={transactions} />
-      console.log(transactions);
     </div>
   );
 };
